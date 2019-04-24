@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{d5e52629-6171-4b7b-bb1e-65eb1ef08e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectShow">
+      <UniqueIdentifier>{5cee661a-5ccd-4824-af7b-87ee4513a3db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeasurementObj">
+      <UniqueIdentifier>{d09fc9fa-e9ca-434f-b806-2bd6eeddcada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{aae73b69-8fa8-4f57-8bfe-29fde05f44ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsWord">
+      <UniqueIdentifier>{83fc4708-cbcd-4c20-ab42-ef6572adf48d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{72f48f10-cc02-4f71-b059-3ef3e09f5bea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UltraTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UltraToolsDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UltraToolsView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AnalysisView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorerChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExplorerView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CreditStatic.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PaletteColorTable.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PaletteStatic.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\SplitterBar.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\VectorGraph.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadImageForAnalysisWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRCameraMeasurementAnalysisPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRCameraMeasurementDockingBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRCameraMeasurementGridCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRCameraMeasurementImageProcessPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRCameraMeasurementObjParametersPage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRCameraMeasurementWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectShow\VideoDirectShowWnd.h">
+      <Filter>DirectShow</Filter>
+    </ClInclude>
+    <ClInclude Include="MeasurementObj\DrawObj.h">
+      <Filter>MeasurementObj</Filter>
+    </ClInclude>
+    <ClInclude Include="MeasurementObj\DrawTool.h">
+      <Filter>MeasurementObj</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ColorSliderCtrl.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RangeSlider.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDefsForSys.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SysOptionsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\FlirCamCtrl.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CheckHeadCtrl.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MsWord\msword.h">
+      <Filter>MsWord</Filter>
+    </ClInclude>
+    <ClInclude Include="MsWord\WordDocOperateBasic.h">
+      <Filter>MsWord</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CheckListCtrl.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MsWord\WordDocReport.h">
+      <Filter>MsWord</Filter>
+    </ClInclude>
+    <ClInclude Include="exif.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\AdoDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="Database\SysDatabase.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UltraTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UltraToolsDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UltraToolsView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AnalysisView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplorerChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExplorerView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CreditStatic.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\PaletteStatic.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\SplitterBar.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\VectorGraph.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadImageForAnalysisWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IRCameraMeasurementAnalysisPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IRCameraMeasurementDockingBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IRCameraMeasurementGridCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IRCameraMeasurementImageProcessPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IRCameraMeasurementObjParametersPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IRCameraMeasurementWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectShow\VideoDirectShowWnd.cpp">
+      <Filter>DirectShow</Filter>
+    </ClCompile>
+    <ClCompile Include="MeasurementObj\DrawObj.cpp">
+      <Filter>MeasurementObj</Filter>
+    </ClCompile>
+    <ClCompile Include="MeasurementObj\DrawTool.cpp">
+      <Filter>MeasurementObj</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ColorSliderCtrl.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\RangeSlider.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalDefsForSys.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SysOptionsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\FlirCamCtrl.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CheckHeadCtrl.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MsWord\msword.cpp">
+      <Filter>MsWord</Filter>
+    </ClCompile>
+    <ClCompile Include="MsWord\WordDocOperateBasic.cpp">
+      <Filter>MsWord</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CheckListCtrl.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MsWord\WordDocReport.cpp">
+      <Filter>MsWord</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\AdoDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="Database\SysDatabase.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UltraTools.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\UltraTools.toolbar.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\pencil.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\UltraTools.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\UltraToolsDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\LOGO2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\LOGO3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\MainFrameToolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ExplorerToolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\AnalysisToolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ReportToolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\VLImageProcessToolBar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\TITLE.BMP">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\MainFrameMenu16.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ExplorerMenu16.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\AnalysisMenu16.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ReportMenu16.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IRCameraMeasurementTabIcons.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\MainFrameMenu256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\MainFrameToolbar256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ExplorerToolbar256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ExplorerMenu256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\AnalysisToolbar256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\AnalysisMenu256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ReportToolbar256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ReportMenu256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\LOGO.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\VLImageProcessToolBar_Cold256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\VLImageProcessToolBar256.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\thumbV.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\thumbB.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\MdiBackground.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\NoThumbnail.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\WEB.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Login.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Explorer.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Analysis.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Report.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Manage.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\StatusBarAnimation.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\checkboxes.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UltraTools.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

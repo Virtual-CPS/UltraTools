@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C15C3CE-B641-422B-BD14-36E163F4D183}</ProjectGuid>
+    <RootNamespace>UltraTools</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>UltraTools</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_BCGCBPRO_STATIC_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../LibThermalImage/LibThermalImage/ThermalImageDLL</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Utility\LIB</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;wininet.lib;ThermalImageUD.lib;HvUtilityLibInterfacesD.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);D:\Program Files\BCGSoft\BCGControlBarPro\BCGCBPro\Styles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_BCGCBPRO_STATIC_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../../LibThermalImage/LibThermalImage/ThermalImageDLL</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>Utility\LIB</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;wininet.lib;ThermalImageU.lib;HvUtilityLibInterfaces.lib</AdditionalDependencies>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);D:\Program Files\BCGSoft\BCGControlBarPro\BCGCBPro\Styles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="AnalysisChildFrm.h" />
+    <ClInclude Include="AnalysisView.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="Database\AdoDatabase.h" />
+    <ClInclude Include="Database\SysDatabase.h" />
+    <ClInclude Include="DirectShow\VideoDirectShowWnd.h" />
+    <ClInclude Include="exif.h" />
+    <ClInclude Include="ExplorerChildFrm.h" />
+    <ClInclude Include="ExplorerView.h" />
+    <ClInclude Include="GlobalDefsForSys.h" />
+    <ClInclude Include="IRCameraMeasurementAnalysisPage.h" />
+    <ClInclude Include="IRCameraMeasurementDockingBar.h" />
+    <ClInclude Include="IRCameraMeasurementGridCtrl.h" />
+    <ClInclude Include="IRCameraMeasurementImageProcessPage.h" />
+    <ClInclude Include="IRCameraMeasurementObjParametersPage.h" />
+    <ClInclude Include="IRCameraMeasurementWnd.h" />
+    <ClInclude Include="LoadImageForAnalysisWnd.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MeasurementObj\DrawObj.h" />
+    <ClInclude Include="MeasurementObj\DrawTool.h" />
+    <ClInclude Include="MsWord\msword.h" />
+    <ClInclude Include="MsWord\WordDocOperateBasic.h" />
+    <ClInclude Include="MsWord\WordDocReport.h" />
+    <ClInclude Include="ReportChildFrm.h" />
+    <ClInclude Include="ReportView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SDK\FlirCamCtrl.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SysOptionsDlg.h" />
+    <ClInclude Include="UI\CheckListCtrl.h" />
+    <ClInclude Include="UI\CheckHeadCtrl.h" />
+    <ClInclude Include="UI\ColorSliderCtrl.h" />
+    <ClInclude Include="UI\CreditStatic.h" />
+    <ClInclude Include="UI\PaletteColorTable.h" />
+    <ClInclude Include="UI\PaletteStatic.h" />
+    <ClInclude Include="UI\RangeSlider.h" />
+    <ClInclude Include="UI\SplitterBar.h" />
+    <ClInclude Include="UI\VectorGraph.h" />
+    <ClInclude Include="UltraTools.h" />
+    <ClInclude Include="UltraToolsDoc.h" />
+    <ClInclude Include="UltraToolsView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="AnalysisChildFrm.cpp" />
+    <ClCompile Include="AnalysisView.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="Database\AdoDatabase.cpp" />
+    <ClCompile Include="Database\SysDatabase.cpp" />
+    <ClCompile Include="DirectShow\VideoDirectShowWnd.cpp" />
+    <ClCompile Include="ExplorerChildFrm.cpp" />
+    <ClCompile Include="ExplorerView.cpp" />
+    <ClCompile Include="GlobalDefsForSys.cpp" />
+    <ClCompile Include="IRCameraMeasurementAnalysisPage.cpp" />
+    <ClCompile Include="IRCameraMeasurementDockingBar.cpp" />
+    <ClCompile Include="IRCameraMeasurementGridCtrl.cpp" />
+    <ClCompile Include="IRCameraMeasurementImageProcessPage.cpp" />
+    <ClCompile Include="IRCameraMeasurementObjParametersPage.cpp" />
+    <ClCompile Include="IRCameraMeasurementWnd.cpp" />
+    <ClCompile Include="LoadImageForAnalysisWnd.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MeasurementObj\DrawObj.cpp" />
+    <ClCompile Include="MeasurementObj\DrawTool.cpp" />
+    <ClCompile Include="MsWord\msword.cpp" />
+    <ClCompile Include="MsWord\WordDocOperateBasic.cpp" />
+    <ClCompile Include="MsWord\WordDocReport.cpp" />
+    <ClCompile Include="ReportChildFrm.cpp" />
+    <ClCompile Include="ReportView.cpp" />
+    <ClCompile Include="SDK\FlirCamCtrl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SysOptionsDlg.cpp" />
+    <ClCompile Include="UI\CheckListCtrl.cpp" />
+    <ClCompile Include="UI\CheckHeadCtrl.cpp" />
+    <ClCompile Include="UI\ColorSliderCtrl.cpp" />
+    <ClCompile Include="UI\CreditStatic.cpp" />
+    <ClCompile Include="UI\PaletteStatic.cpp" />
+    <ClCompile Include="UI\RangeSlider.cpp" />
+    <ClCompile Include="UI\SplitterBar.cpp" />
+    <ClCompile Include="UI\VectorGraph.cpp" />
+    <ClCompile Include="UltraTools.cpp" />
+    <ClCompile Include="UltraToolsDoc.cpp" />
+    <ClCompile Include="UltraToolsView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UltraTools.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\pencil.cur" />
+    <None Include="res\UltraTools.rc2" />
+    <None Include="res\UltraTools.toolbar.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Analysis.ico" />
+    <Image Include="res\AnalysisMenu16.bmp" />
+    <Image Include="res\AnalysisMenu256.png" />
+    <Image Include="res\AnalysisToolbar.bmp" />
+    <Image Include="res\AnalysisToolbar256.png" />
+    <Image Include="res\checkboxes.bmp" />
+    <Image Include="res\Explorer.ico" />
+    <Image Include="res\ExplorerMenu16.bmp" />
+    <Image Include="res\ExplorerMenu256.png" />
+    <Image Include="res\ExplorerToolbar.bmp" />
+    <Image Include="res\ExplorerToolbar256.png" />
+    <Image Include="res\IRCameraMeasurementTabIcons.bmp" />
+    <Image Include="res\Login.ico" />
+    <Image Include="res\LOGO.png" />
+    <Image Include="res\LOGO2.bmp" />
+    <Image Include="res\LOGO3.bmp" />
+    <Image Include="res\MainFrameMenu16.bmp" />
+    <Image Include="res\MainFrameMenu256.png" />
+    <Image Include="res\MainFrameToolbar.bmp" />
+    <Image Include="res\MainFrameToolbar256.png" />
+    <Image Include="res\Manage.ico" />
+    <Image Include="res\MdiBackground.jpg" />
+    <Image Include="res\NoThumbnail.jpg" />
+    <Image Include="res\Report.ico" />
+    <Image Include="res\ReportMenu16.bmp" />
+    <Image Include="res\ReportMenu256.png" />
+    <Image Include="res\ReportToolbar.bmp" />
+    <Image Include="res\ReportToolbar256.png" />
+    <Image Include="res\StatusBarAnimation.png" />
+    <Image Include="res\thumbB.png" />
+    <Image Include="res\thumbV.png" />
+    <Image Include="res\TITLE.BMP" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\UltraTools.ico" />
+    <Image Include="res\UltraToolsDoc.ico" />
+    <Image Include="res\VLImageProcessToolBar.bmp" />
+    <Image Include="res\VLImageProcessToolBar256.png" />
+    <Image Include="res\VLImageProcessToolBar_Cold256.png" />
+    <Image Include="res\WEB.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="UltraTools.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
