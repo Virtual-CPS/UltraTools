@@ -10,8 +10,8 @@ FLIR官方提供的SDK大于700M，本系统没有使用该SDK，用再现FLIR�
 
 
 
-***详细描述参见：
-https://www.mesheye.net/products/
+***详细描述参见：<br>
+https://www.mesheye.net/products/ultra-tools.html
 
-***技术交流：
+***技术交流：<br>
 info@MeshEye.net
